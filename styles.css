@@ -1,0 +1,186 @@
+/* styles.css */
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:  #5ccbcb;
+   
+  }
+  
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #008080;
+    margin-bottom: 25px;
+  }
+  
+  .display-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border: 2px solid #008080;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #e0f7f7;
+  }
+  
+  .display {
+    border: none;
+    background: none;
+    flex-grow: 1;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 10px;
+    outline: none;
+    color: #008080;
+  }
+  
+  .copyBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .copyBtn:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .input-container {
+    text-align: left;
+  }
+  
+  .length-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #008080;
+  }
+  
+  .slider {
+    width: 100%;
+    margin-bottom: 20px;
+    accent-color: #ff7f50;
+  }
+  
+  .check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .check input {
+    margin-right: 10px;
+    accent-color: #ff7f50;
+  }
+  
+  .check label {
+    font-size: 16px;
+    color: #008080;
+  }
+  
+  .strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #008080;
+  }
+  
+  .indicator {
+    width: 60px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #257979;
+  }
+  
+  .generateButton {
+    background-color: #008080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .generateButton:hover {
+    background-color: #007373;
+  }
+  /* @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .display-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .display {
+      font-size: 16px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .tooltip {
+      width: 100px;
+      margin-left: -50px;
+    }
+  
+    .length-container {
+      font-size: 14px;
+    }
+  
+    .check label {
+      font-size: 14px;
+    }
+  
+    .strength-container {
+      font-size: 14px;
+    }
+  
+    .generateButton {
+      font-size: 16px;
+    }
+  } */
